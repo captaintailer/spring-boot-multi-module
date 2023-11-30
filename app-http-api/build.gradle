@@ -1,0 +1,13 @@
+dependencies {
+
+    // Spring Boot
+    compileOnly("org.springframework.boot:spring-boot-configuration-processor")
+    annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+
+    // Cannon Inspect Modules
+    implementation(project(':system-core'))
+    implementation(project(':available-undecided'))
+    implementation(project(':domain-mybatis'))
+    implementation(project(':domain-querydsl'))
+}
