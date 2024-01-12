@@ -1,2 +1,8 @@
+dependencies {
+
+    // Mybatis에서 Spring Boot 기반 설정
+    implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:${myBatisSpringBootStarterVersion}")
+}
+
 jar.enabled = true
 bootJar.enabled = false
