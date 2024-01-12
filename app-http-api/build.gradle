@@ -5,6 +5,9 @@ dependencies {
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
     implementation("org.springframework.boot:spring-boot-starter-web")
 
+    // Spring Doc
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:${springdocVersion}")
+
     // Cannon Inspect Modules
     implementation(project(':system-core'))
     implementation(project(':available-undecided'))
