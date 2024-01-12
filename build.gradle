@@ -1,15 +1,18 @@
 // 스프링 관련 플러그인 설정은 루트 프로젝트에서는 적용안함
 plugins {
-    id 'org.springframework.boot' version '2.7.18' apply false
+    id 'org.springframework.boot' version '3.2.1' apply false
     id 'io.spring.dependency-management' version '1.1.4' apply false
     id "io.freefair.lombok" version "8.4" apply false
 }
 
 // 프로젝트 전체에 동일한 라이브러리 버전을 사용할 수 있도록 관리
 ext {
-    set('springCloudVersion', "2021.0.8")
+    set('springCloudVersion', "2023.0.0")
     set('modelMapperVersion', "3.2.0")
     set('mapStructVersion', "1.5.5.Final")
+    set('myBatisSpringBootStarterVersion', "3.0.3")
+    set('springdocVersion', "2.3.0")
+
 }
 
 allprojects {
@@ -43,8 +46,8 @@ subprojects {
     }
 
     java {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     repositories {
